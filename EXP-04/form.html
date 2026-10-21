@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Forms In HTML</title>
+</head>
+<body>
+    <h1 align ="center">Hotel Room Booking Form</h1>
+    <form action ="#" method="post" align ="center">
+
+    <!-- Fullname -->
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required><br><br>
+
+    <!-- Email -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <!-- Phone -->
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required><br><br>
+
+    <!-- Date -->
+    <label for="date">Check-in Date:</label>
+    <input type="date" id="date" name="date" required><br><br>
+     <label for="date">Check-out Date:</label>
+    <input type="date" id="date" name="date" required><br><br>
+
+    <!-- Room Type -->
+     <label for="roomtype">Room Type:</label>
+    <select id="roomtype" name="roomtype" required>
+        <option value="">Select Room Type</option>
+        <option value="single">Single</option>
+        <option value="double">Double</option>
+        <option value="suite">Suite</option>
+        <option value="deluxe">Deluxe</option>
+        <option value="super deluxe">Super Deluxe</option>
+        <option value="Non-AC">Non-AC</option>
+    </select><br><br>
+
+    <!-- Number of Guests -->
+    <label for="guests">Number of Guests:</label>
+    <input type="number" id="guests" name="guests" min="1" max="10" required>
+    <br><br>
+
+    <!-- Special Requests -->
+    <label for="requests">Special Requests:</label>
+    <br>
+    <textarea id="requests" name="requests" rows="4" cols="50"></textarea>
+    <br><br>
+     
+    <!-- Submit Button -->
+    <input type="submit" value="Book Now">
+
+    <!-- Reset Button -->
+    <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
